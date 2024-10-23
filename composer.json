@@ -1,0 +1,26 @@
+{
+    "name": "clement/activite2",
+    "description": "Premier projet avec composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Clement\\Activite2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "clemkiller33",
+            "email": "105709388+clemkiller33@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "monolog/monolog": "^2.9",
+        "mustache/mustache": "^2.14",
+        "syllab/test-scaffolder": "^1.0"  
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",  
+        "symfony/maker-bundle": "^1.0" 
+    }
+}

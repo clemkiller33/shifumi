@@ -1,0 +1,136 @@
+
+
+
+
+#allplayers{
+    display:flex;
+    flex-direction: row;
+    width : 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    position: relative;
+
+}
+
+
+#player1,
+#player2{
+    height: 80%;
+    width:100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+
+body{
+    font-family:Arial, sans-serif;
+
+  background-color: #E0E0E0;
+  
+}
+
+
+
+html{
+    text-align: center;
+}
+
+#allplayers >p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white; /* Pour éviter que le texte ne soit coupé par les bordures */
+    padding: 5px;  /* Ajout d'un peu de padding pour plus de clarté */
+}
+
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    color: black;
+    padding : 10px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    gap: 10%;
+}
+
+#btn-container{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+}
+
+.btn-style {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border-radius: 7%;
+    height: 50%;
+    width: 25%;
+    background-color: black;
+    transition: transform 0.3s ease; 
+}
+
+.btn-style:first-child {
+    background-color: red;
+}
+
+.btn-style:last-child {
+    background-color: green;
+}
+
+.btn-style:hover {
+    transform: scale(1.2); 
+}
+
+
+footer {
+    padding: 10px 20px;
+    background: #929191;
+    color: white;
+  }
